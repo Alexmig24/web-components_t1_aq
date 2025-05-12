@@ -34,7 +34,7 @@ Los slots son puntos de inserción que permiten que un componente reciba conteni
 1. Slot por defecto
 Es un slot sin nombre, y todo el contenido sin atributo slot será insertado automáticamente en él.
 
-<slot></slot>
+```<slot></slot>```
 
 2. Slot con nombre
 Es un slot con el atributo name. El contenido que se desea insertar debe tener el atributo slot con el mismo nombre:
