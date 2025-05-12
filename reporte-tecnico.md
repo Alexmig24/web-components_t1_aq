@@ -1,9 +1,9 @@
-Reporte Técnico — Componente Web <tarjeta-aq-perfil>
+Reporte Técnico — Componente Web ```<tarjeta-aq-perfil>```	
 
 ---
 
-Autor: Quizhpe Cuzme Alexander Miguel
-Tarea: Componente personalizado con Web Components
+Autor: Quizhpe Cuzme Alexander Miguel ↔
+Tarea: Componente personalizado con Web Components ↔
 Fecha: Mayo 2025
 
 ---
@@ -31,19 +31,19 @@ Al usar Shadow DOM, todos los estilos y estructura interna definidos dentro del 
 
 Los slots son puntos de inserción que permiten que un componente reciba contenido externo. Existen dos tipos principales:
 
-1. Slot por defecto
-Es un slot sin nombre, y todo el contenido sin atributo slot será insertado automáticamente en él.
+    ─ Slot por defecto: Es un slot sin nombre, y todo el contenido sin atributo slot será insertado automáticamente en él.
 
 ```<slot></slot>```
 
-2. Slot con nombre
-Es un slot con el atributo name. El contenido que se desea insertar debe tener el atributo slot con el mismo nombre:
+    ─ Slot con nombre: Es un slot con el atributo name. El contenido que se desea insertar debe tener el atributo slot con el mismo nombre:
 
+```	
 <!-- En el componente -->
 <slot name="nombre"></slot>
 
 <!-- En el HTML externo -->
 <h2 slot="nombre">Alexander Quizhpe</h2>
+```
 
 Ventajas del slot con nombre:
 
