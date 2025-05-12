@@ -10,7 +10,7 @@ Fecha: Mayo 2025
 
 ## Objetivo
 
-El objetivo del proyecto fue crear un componente personalizado (Web Component) llamado <tarjeta-aq-perfil> que represente una tarjeta de presentación personalizable. Este componente permite al usuario ingresar un título, tres párrafos descriptivos y una imagen, con opción de elegir si la imagen se posiciona a la izquierda o derecha del texto.
+El objetivo del proyecto fue crear un componente personalizado (Web Component) llamado ```<tarjeta-aq-perfil>``` que represente una tarjeta de presentación personalizable. Este componente permite al usuario ingresar un título, tres párrafos descriptivos y una imagen, con opción de elegir si la imagen se posiciona a la izquierda o derecha del texto.
 
 --- 
 
@@ -18,7 +18,7 @@ El objetivo del proyecto fue crear un componente personalizado (Web Component) l
 
 La encapsulación se logra a través del uso del Shadow DOM, que crea un árbol DOM independiente del documento principal. Esto se realiza mediante el siguiente código en el constructor del componente:
 
-this.attachShadow({ mode: 'open' }); 
+```this.attachShadow({ mode: 'open' });```
 
 Al usar Shadow DOM, todos los estilos y estructura interna definidos dentro del componente están completamente aislados del resto de la página. Esto garantiza:
     ─ Que los estilos no se filtren hacia afuera ni entren desde el exterior.
@@ -31,11 +31,10 @@ Al usar Shadow DOM, todos los estilos y estructura interna definidos dentro del 
 
 Los slots son puntos de inserción que permiten que un componente reciba contenido externo. Existen dos tipos principales:
 
-    ─ Slot por defecto: Es un slot sin nombre, y todo el contenido sin atributo slot será insertado automáticamente en él.
-
+1. Slot por defecto: Es un slot sin nombre, y todo el contenido sin atributo slot será insertado automáticamente en él.  
 ```<slot></slot>```
 
-    ─ Slot con nombre: Es un slot con el atributo name. El contenido que se desea insertar debe tener el atributo slot con el mismo nombre:
+2. Slot con nombre: Es un slot con el atributo name. El contenido que se desea insertar debe tener el atributo slot con el mismo nombre:
 
 ```	
 <!-- En el componente -->
