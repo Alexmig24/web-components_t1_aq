@@ -2,9 +2,9 @@ Reporte Técnico — Componente Web ```<tarjeta-aq-perfil>```
 
 ---
 
-Autor: Quizhpe Cuzme Alexander Miguel ↔
-Tarea: Componente personalizado con Web Components ↔
-Fecha: Mayo 2025
+Autor: Quizhpe Cuzme Alexander Miguel  
+Tarea: Componente personalizado con Web Components  
+Fecha: Mayo 2025  
 
 ---
 
