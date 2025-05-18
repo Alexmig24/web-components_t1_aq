@@ -38,7 +38,7 @@ class tarjetaAQ extends HTMLElement {
           padding: 1em;
           background-color: ${tema};
           font-family: Arial, sans-serif;
-          max-width: 700px;
+          max-width: 600px;
           margin: 20px auto;
         }
 
