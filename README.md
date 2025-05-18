@@ -17,7 +17,7 @@ Tarjeta visual que presenta información personal, incluyendo:
 Este componente utiliza slots para mostrar los datos dinámicamente.
 
 ### `<formulario-aq>`
-Formulario interactivo que permite al usuario actualizar el contenido del componente `<tarjeta-aq>`. Incluye:
+Formulario interactivo que permite al usuario actualizar el contenido del componente `<tarjeta-aq-perfil>`. Incluye:
 - Entrada para nombre
 - Universidad
 - Carrera

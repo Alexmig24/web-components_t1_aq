@@ -16,7 +16,7 @@ Diseñar e integrar dos componentes personalizados usando Web Components con Sha
 
 ## 🧩 Componentes Personalizados
 
-### 1. ```<tarjeta-aq>```
+### 1. ```<tarjeta-aq-perfil>```
 
 Este componente representa una tarjeta visual informativa. Tiene soporte para slots dinámicos y atributos personalizados.
 
@@ -55,12 +55,12 @@ Este componente encapsula un formulario dentro de un Shadow DOM. Está diseñado
 ```mermaid
 sequenceDiagram
   participant Usuario
-  participant <formulario-aq>
-  participant <tarjeta-aq>
+  participant Formulario
+  participant Tarjeta
 
-  Usuario->>formulario-aq: Ingresa datos y presiona botón
-  formulario-aq->>tarjeta-aq: Actualiza atributos y contenido
-  tarjeta-aq->>Usuario: Muestra información actualizada
+  Usuario->>Formulario: Ingresa datos y presiona botón
+  Formulario->>Tarjeta: Actualiza atributos y contenido
+  Tarjeta->>Usuario: Muestra información actualizada
 ```
 ---
 
