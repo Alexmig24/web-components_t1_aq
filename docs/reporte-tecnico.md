@@ -16,7 +16,7 @@ Diseñar e integrar dos componentes personalizados usando Web Components con Sha
 
 ## 🧩 Componentes Personalizados
 
-### 1. `<tarjeta-aq>`
+### 1. ```<tarjeta-aq>```
 
 Este componente representa una tarjeta visual informativa. Tiene soporte para slots dinámicos y atributos personalizados.
 

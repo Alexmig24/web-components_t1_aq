@@ -1,10 +1,10 @@
-# Tarea 2 - Web Components: Integración de Componente de Contacto y Tarjeta de Perfil
+Componente Web ```<tarjeta-aq-perfil>``` y ```<formulario-aq>```
 
 Este proyecto consiste en la creación y la integración de dos componentes personalizados mediante Web Components con Shadow DOM. Esta es la segunda parte de un proyecto individual cuyo objetivo es aprender a desarrollar interfaces personalizadas y reutilizables sin depender de frameworks externos.
 
 ## 🧩 Componentes Incluidos
 
-### `<tarjeta-aq>`
+### `<tarjeta-aq-perfil>`
 Tarjeta visual que presenta información personal, incluyendo:
 - Nombre
 - Universidad
@@ -37,10 +37,3 @@ Cuando el usuario llena el formulario y presiona el botón **Actualizar Informac
 2. Abre `index.html` en tu navegador.
 3. Llena el formulario y haz clic en "Actualizar Información".
 4. Observa los cambios reflejados en tiempo real en la tarjeta.
-
-## 📸 Capturas
-
-Las capturas se encuentran en la carpeta `/docs`.
-
-**Quizhpe Cuzme Alexander Miguel**  
-Tecnologías de la Información - ESPE Sede Santo Domingo
