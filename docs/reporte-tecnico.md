@@ -1,9 +1,9 @@
-Reporte Técnico — Componente Web ```<tarjeta-aq-perfil>``` y ```<formulario-aq>```
+Reporte Técnico — Componente Web ```<tarjeta-aq-perfil>```, ```<formulario-aq>``` y ```<modal-info-aq>```
 
 ---
 
 Autor: Quizhpe Cuzme Alexander Miguel  
-Tarea: Componente personalizado con Web Components  
+Tarea: Implementar Especificaciones Avanzadas en Web Components
 Fecha: Mayo 2025  
 
 ---
@@ -50,17 +50,25 @@ Este componente encapsula un formulario dentro de un Shadow DOM. Está diseñado
 
 ---
 
-## 🔁 Interacción entre componentes
+## 🧩 Comunicación entre tarjeta-aq-perfil, formulario-aq y modal-info-aq
 
 ```mermaid
 sequenceDiagram
-  participant Usuario
-  participant Formulario
-  participant Tarjeta
+    participant Usuario
+    participant Tarjeta as tarjeta-aq-perfil
+    participant Formulario as formulario-aq
+    participant Modal as modal-info-aq
 
-  Usuario->>Formulario: Ingresa datos y presiona botón
-  Formulario->>Tarjeta: Actualiza atributos y contenido
-  Tarjeta->>Usuario: Muestra información actualizada
+    Usuario->>Formulario: Ingresa datos y hace clic en "Actualizar"
+    Formulario->>Tarjeta: Actualiza información mediante atributos/properties
+    Formulario->>Modal: Llama a open()
+    Modal-->>Formulario: dispatchEvent('modal-abierto')
+    
+    Note over Modal: Modal muestra mensaje de confirmación
+
+    Usuario->>Modal: Clic en botón "Cerrar"
+    Modal->>Modal: close()
+    Modal-->>Formulario: dispatchEvent('modal-cerrado')
 ```
 ---
 

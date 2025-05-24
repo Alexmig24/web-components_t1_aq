@@ -1,4 +1,4 @@
-Componente Web ```<tarjeta-aq-perfil>``` y ```<formulario-aq>```
+Componente Web ```<tarjeta-aq-perfil>```, ```<formulario-aq>``` y ```<modal-info-aq>```
 
 Este proyecto consiste en la creación y la integración de dos componentes personalizados mediante Web Components con Shadow DOM. Esta es la segunda parte de un proyecto individual cuyo objetivo es aprender a desarrollar interfaces personalizadas y reutilizables sin depender de frameworks externos.
 
@@ -26,6 +26,31 @@ Formulario interactivo que permite al usuario actualizar el contenido del compon
 - Selector de color
 - Selector de posición de imagen
 - Botón para aplicar cambios
+
+### `<ModalInfoAQ>`
+
+Es un componente web avanzado reutilizable basado en **Web Components**, que implementa especificaciones modernas como:
+
+- `<template>` para estructuras reutilizables.
+- Shadow DOM para encapsulamiento.
+- Uso de `<slot>` con contenido de respaldo (fallback).
+- Modularización con `export`/`import` usando ES Modules.
+- Emisión de eventos personalizados (`modal-abierto`, `modal-cerrado`).
+
+
+## 📦 Estructura del proyecto
+
+📁 src/
+│ ├── espeModal.js → Componente modal personalizado
+│ └── formularioContactoAQ.js → Componente externo que interactúa con el modal
+📁 docs/
+│ ├── capturas/
+│ │ ├── modal-abierto.png
+│ │ ├── modal-cerrado.png
+│ │ └── slots-en-accion.png
+│ └── diagrama-comunicacion.png
+index.html
+README.md
 
 ## ⚙️ Integración entre componentes
 
