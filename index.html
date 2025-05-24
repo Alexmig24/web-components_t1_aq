@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Tarea 2 - 23116</title>
+    <title>Tarea 3 - 23116</title>
     <style>
         html, body {
             height: 100%;
@@ -38,8 +38,17 @@
             <p slot="carrera">Tecnologias de la Información </p>
             <p slot="edad">20 años</p>
         </tarjeta-aq-perfil>
+
+        <modal-info-aq id="modalInfo">
+            <h2 slot="titulo">✅ ¡Actualización exitosa!</h2>
+            <p slot="contenido">
+                Tus datos han sido guardados correctamente, puedes verificar los datos en la card de perfil, la cual se encuentra en la parte derecha del formulario.
+            </p>
+            <button slot="acciones" onclick="document.querySelector('#modalInfo').close()">
+                Cerrar ventana
+            </button>
+        </modal-info-aq>
     </div>
-    <script type="module" src="JS/tarjetaAQ.js"></script>
-    <script type="module" src="JS/formularioContactoAQ.js"></script>
+    <script type="module" src="JS/main.js"></script>
 </body>
 </html>

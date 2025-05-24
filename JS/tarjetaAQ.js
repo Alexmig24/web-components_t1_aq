@@ -47,7 +47,7 @@ class tarjetaAQ extends HTMLElement {
           height: 200px;
           border-radius: 10px;
           object-fit: cover;
-          margin: 0 20px;
+          margin: 0 5px;
         }
 
         .titulo {

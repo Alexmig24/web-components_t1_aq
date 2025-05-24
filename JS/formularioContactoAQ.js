@@ -109,6 +109,12 @@ class formularioContactoAQ extends HTMLElement {
     if (universidad) tarjeta.querySelector('[slot="estudio"]').textContent = universidad;
     if (carrera) tarjeta.querySelector('[slot="carrera"]').textContent = carrera;
     if (edad) tarjeta.querySelector('[slot="edad"]').textContent = edad;
+
+    this.dispatchEvent(new CustomEvent('formulario-enviado', {
+      detail: { mensaje: 'Formulario actualizado con éxito' },
+      bubbles: true,
+      composed: true
+    }));
   }
 }
 
