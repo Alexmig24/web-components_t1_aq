@@ -40,15 +40,18 @@ Es un componente web avanzado reutilizable basado en **Web Components**, que imp
 
 ## 📦 Estructura del proyecto
 
-📁 src/
-│ ├── espeModal.js → Componente modal personalizado
+📁 JS/
+│ ├── main.js → Permite la Modularización
+│ ├── modalInfoAQ.js → Componente modal personalizado
+│ ├── trajetaAQ.js → Componente card personalizado
 │ └── formularioContactoAQ.js → Componente externo que interactúa con el modal
 📁 docs/
 │ ├── capturas/
 │ │ ├── modal-abierto.png
 │ │ ├── modal-cerrado.png
-│ │ └── slots-en-accion.png
-│ └── diagrama-comunicacion.png
+│ │ ├── formulario-card.png
+│ │ └── card-cambiada.png
+│ └── reporte-tecnico.md
 index.html
 README.md
 
@@ -62,3 +65,6 @@ Cuando el usuario llena el formulario y presiona el botón **Actualizar Informac
 2. Abre `index.html` en tu navegador.
 3. Llena el formulario y haz clic en "Actualizar Información".
 4. Observa los cambios reflejados en tiempo real en la tarjeta.
+
+## 📝Nota: 
+Para mas informacion leer el documento reporte-tecnico en la carpeta ```docs```
